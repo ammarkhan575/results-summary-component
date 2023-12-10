@@ -16,32 +16,33 @@
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="output.css">
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body class="font-['Hanken Grotesk']">
-    <div class="h-screen w-screen flex justify-center text-[18px]">
-      <div class="min-w-[375px] w-screen flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+    <div class="min-h-screen w-screen flex justify-center sm:items-center text-[18px]">
+      <div class="min-w-[375px] w-screen flex flex-col items-center sm:justify-center gap-4 sm:flex-row sm:gap-0 shadow-lg max-w-[800px] rounded-[40px] shadow-indigo-500/40">
         <!-- Result -->
         <div
-          class="flex flex-col bg-gradient-to-b from-[#7857ff] to-[#2e2be9] w-[375px] h-[350px] justify-start items-center gap-4 rounded-b-3xl pt-5 sm:rounded-3xl"
+          class="flex flex-col bg-gradient-to-b from-[#7857ff] to-[#2e2be9] min-w-[375px] h-[450px] justify-start items-center gap-4 rounded-b-3xl pt-5 sm:rounded-3xl sm:min-h-[408px] sm:gap-10 w-full sm:w-[375px]"
         >
           <p class="font-semibold text-[hsl(241,100%,89%)]">Your Result</p>
           <!-- circle -->
           <div
-            class="w-[120px] h-[120px] rounded-full bg-gradient-to-b from-[#4e21caa7] to-[#2421ca1c] flex flex-col justify-center items-center gap-2"
+            class="w-[170px] h-[170px] rounded-full bg-gradient-to-b from-[#4e21caa7] to-[#2421ca1c] flex flex-col justify-center items-center gap-2"
           >
             <p class="font-bold text-5xl text-white">76</p>
             <p class="text-base text-[hsla(222,100%,96%,0.5)]">of 100</p>
           </div>
-          <p class="text-white font-semibold text-2xl">Great</p>
-          <p class="text-[hsla(241,100%,89%,1)] text-base font-semibold text-center mx-10 text-">
+          <p class="text-white font-semibold text-2xl mt-8 sm:mt-4">Great</p>
+          <p class="text-[hsla(241,100%,89%,1)] mt-6 sm:mt-0 text-base font-semibold text-center mx-24 sm:mx-0 text-">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
         
         <!-- Summary -->
-        <div class="flex flex-col mx-5 gap-5 w-[350px]">
-          <p class="text-left font-bold text-xl">Summary</p>
+        <div class="flex flex-col mx-5 gap-5 w-full sm:w-[375px] px-5 ">
+          <p class="text-left font-bold text-xl block">Summary</p>
           <!-- Reaction -->
           <div class="flex h-14 bg-[#ff575725] items-center justify-between px-4 rounded-md">
             <div class="flex gap-2">
@@ -74,16 +75,17 @@
             </div>
             <div><span class="font-semibold">72</span> <span class="text-[hsla(220,1%,50%,1)] font-semibold">/ 100</span></div>
           </div>
+          <!-- Continue button -->
           <div class="flex justify-center font-bold items-center bg-[hsl(224,30%,27%)] rounded-full text-white h-14">Continue</div>
         </div>
       </div>
     </div>
 
-    <div class="attribution">
+    <div class="attribution text-center">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/ammarkhan575">Mohd Ammar</a>.
     </div>
   </body>
 </html>
