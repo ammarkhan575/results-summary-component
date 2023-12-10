@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body class="font-['Hanken Grotesk']">
+    <div class="h-screen w-screen flex justify-center text-[18px]">
+      <div class="min-w-[375px] w-screen flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+        <!-- Result -->
+        <div
+          class="flex flex-col bg-gradient-to-b from-[#7857ff] to-[#2e2be9] w-[375px] h-[350px] justify-start items-center gap-4 rounded-b-3xl pt-5 sm:rounded-3xl"
+        >
+          <p class="font-semibold text-[hsl(241,100%,89%)]">Your Result</p>
+          <!-- circle -->
+          <div
+            class="w-[120px] h-[120px] rounded-full bg-gradient-to-b from-[#4e21caa7] to-[#2421ca1c] flex flex-col justify-center items-center gap-2"
+          >
+            <p class="font-bold text-5xl text-white">76</p>
+            <p class="text-base text-[hsla(222,100%,96%,0.5)]">of 100</p>
+          </div>
+          <p class="text-white font-semibold text-2xl">Great</p>
+          <p class="text-[hsla(241,100%,89%,1)] text-base font-semibold text-center mx-10 text-">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        
+        <!-- Summary -->
+        <div class="flex flex-col mx-5 gap-5 w-[350px]">
+          <p class="text-left font-bold text-xl">Summary</p>
+          <!-- Reaction -->
+          <div class="flex h-14 bg-[#ff575725] items-center justify-between px-4 rounded-md">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-reaction.svg" alt="">
+              <p class="font-bold text-[#ff5757]">Reaction</p>
+            </div>
+            <div><span class="font-semibold">80</span> <span class="text-[hsla(220,1%,50%,1)] font-semibold">/ 100</span></div>
+          </div>
+          <!-- Memory -->
+          <div class="flex h-14 bg-[#ffb01f25] items-center justify-between px-4 rounded-md">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-memory.svg" alt="">
+              <p class="font-bold text-[#ffb01f]">Memory</p>
+            </div>
+            <div><span class="font-semibold">92</span> <span class="text-[hsla(220,1%,50%,1)] font-semibold">/ 100</span></div>
+          </div>
+          <!-- Verbal -->
+          <div class="flex h-14 bg-[#00bd9125] items-center justify-between px-4 rounded-md">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-verbal.svg" alt="">
+              <p class="font-bold text-[#00bd91]">Verbal</p>
+            </div>
+            <div><span class="font-semibold">61</span> <span class="text-[hsla(220,1%,50%,1)] font-semibold">/ 100</span></div>
+          </div>
+          <!-- Visual -->
+          <div class="flex h-14 bg-[#1125d425] items-center justify-between px-4 rounded-md">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-visual.svg" alt="">
+              <p class="font-bold text-[#1125d4]">Visual</p>
+            </div>
+            <div><span class="font-semibold">72</span> <span class="text-[hsla(220,1%,50%,1)] font-semibold">/ 100</span></div>
+          </div>
+          <div class="flex justify-center font-bold items-center bg-[hsl(224,30%,27%)] rounded-full text-white h-14">Continue</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
